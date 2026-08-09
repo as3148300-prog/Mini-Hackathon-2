@@ -1,0 +1,5 @@
+ @import "tailwindcss";
+ @font-face {
+    font-family: font;
+    src: url(fonts/6963a3085b7c07db39165448_NeueMontreal-Medium.otf);
+ }
