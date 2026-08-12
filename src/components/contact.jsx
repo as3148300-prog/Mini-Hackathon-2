@@ -166,7 +166,7 @@ const Contact = () => {
             <div className="info-pills">
               <div className="info-pill">
                 <MapPin size={16} />
-                <span>Bhopal, MadhyaPradesh</span>
+                <span>New Delhi</span>
               </div>
               <div className="info-pill">
                 <Clock3 size={16} />
