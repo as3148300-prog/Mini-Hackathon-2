@@ -144,7 +144,7 @@ const Footer = () => {
         {/* Main Grid */}
         <div className="footer-grid">
           <div className="footer-brand glass-card">
-            <h3>Yawwsh.</h3>
+            <h3>Areeb S.</h3>
             <p>
               Frontend Developer crafting minimal, smooth and user-focused web
               experiences.
