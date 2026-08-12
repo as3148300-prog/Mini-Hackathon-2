@@ -1,0 +1,442 @@
+/* =========================
+   GITHUB SECTION
+========================= */
+.github-section {
+  width: 100%;
+  padding: 6rem 1rem 5rem;
+  position: relative;
+  overflow: hidden;
+  background-image: radial-gradient(circle at 30% 70%, rgba(173, 216, 230, 0.35), transparent 60%),
+        radial-gradient(circle at 70% 30%, rgba(255, 182, 193, 0.4), transparent 60%);
+        
+}
+
+.github-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   FLOATING BLOBS
+========================= */
+.github-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.18;
+  z-index: 0;
+  animation: floatGithub 8s ease-in-out infinite;
+}
+
+.gb1 {
+  width: 240px;
+  height: 240px;
+  background: #f4a7b5;
+  top: 5%;
+  left: -80px;
+}
+
+.gb2 {
+  width: 300px;
+  height: 300px;
+  background: #b1dae7;
+  bottom: 0;
+  right: -120px;
+  animation-delay: 2s;
+}
+
+.gb3 {
+  width: 180px;
+  height: 180px;
+  background: #f7d6a8;
+  top: 50%;
+  left: 45%;
+  opacity: 0.12;
+  animation-delay: 4s;
+}
+
+@keyframes floatGithub {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+/* =========================
+   HEADING
+========================= */
+.github-head {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.github-tag {
+  display: inline-block;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  background: linear-gradient(90deg, #f4a7b5, #b1dae7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.github-head h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: clamp(2.2rem, 5vw, 3.3rem);
+  color: pink;
+  -webkit-text-stroke: 1px rgba(107, 107, 107);
+  margin-bottom: 0.9rem;
+}
+
+.github-head p {
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(110, 110, 110);
+  line-height: 1.9;
+}
+
+/* =========================
+   TOP GRID
+========================= */
+.github-top-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+/* =========================
+   PROFILE CARD
+========================= */
+.github-profile-card {
+  background: rgba(255, 248, 250, 0.76);
+  border: 1.5px solid rgba(255,255,255,0.65);
+  border-radius: 34px;
+  padding: 2rem;
+  box-shadow:
+    0 14px 35px rgba(244, 167, 181, 0.10),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.gh-profile-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.gh-icon-wrap {
+  width: 68px;
+  height: 68px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(244, 167, 181, 0.18);
+  color: #d67f93;
+  box-shadow: 0 8px 20px rgba(244, 167, 181, 0.08);
+}
+
+.github-profile-card h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.55rem;
+  color: #4b3838;
+  margin-bottom: 0.2rem;
+}
+
+.github-profile-card .gh-profile-top p {
+  color: #8a7272;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.gh-bio {
+  font-family: 'Quicksand', sans-serif;
+  color: #6e6e6e;
+  line-height: 1.9;
+  font-size: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.gh-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.gh-tags span {
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.58);
+  border: 1px solid rgba(244, 167, 181, 0.18);
+  color: #c98091;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 0.82rem;
+}
+
+.gh-main-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  text-decoration: none;
+  padding: 0.95rem 1.35rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f4a7b5, #d98ca2);
+  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  box-shadow: 0 12px 22px rgba(244, 167, 181, 0.18);
+  transition: 0.3s ease;
+}
+
+.gh-main-btn:hover {
+  transform: translateY(-4px);
+}
+
+/* =========================
+   STATS GRID
+========================= */
+.github-stats-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.gh-stat-card {
+  background: rgba(255,255,255,0.48);
+  border: 1.5px solid rgba(255,255,255,0.65);
+  border-radius: 28px;
+  padding: 1.4rem 1.2rem;
+  box-shadow:
+    0 10px 24px rgba(244, 167, 181, 0.08),
+    inset 0 1px 0 rgba(255,255,255,0.85);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  transition: 0.3s ease;
+}
+
+.gh-stat-card:hover {
+  transform: translateY(-6px);
+}
+
+.gh-stat-card svg {
+  color: #d67f93;
+  margin-bottom: 0.8rem;
+}
+
+.gh-stat-card h4 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.05rem;
+  color: #4b3838;
+  margin-bottom: 0.45rem;
+}
+
+.gh-stat-card p {
+  font-family: 'Quicksand', sans-serif;
+  color: #7a6868;
+  line-height: 1.7;
+  font-size: 0.92rem;
+}
+
+/* =========================
+   MAIN CONTRIBUTION CARD
+========================= */
+.github-main-card {
+  width: 100%;
+  background: rgba(255, 248, 250, 0.76);
+  border: 1.5px solid rgba(255,255,255,0.65);
+  border-radius: 36px;
+  padding: 2rem;
+  box-shadow:
+    0 16px 40px rgba(244, 167, 181, 0.10),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.github-main-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.6rem;
+}
+
+.github-main-top h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.6rem;
+  color: #4b3838;
+  margin-bottom: 0.25rem;
+}
+
+.github-main-top p {
+  font-family: 'Quicksand', sans-serif;
+  color: #7a6868;
+  margin: 0;
+}
+
+.live-badge {
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.58);
+  border: 1px solid rgba(244, 167, 181, 0.18);
+  color: #d67f93;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+/* =========================
+   CALENDAR
+========================= */
+.calendar-wrap {
+  width: 100%;
+  overflow-x: auto;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.github-chart {
+  width: 100%;
+  max-width: 980px;
+  min-width: 760px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.42);
+  padding: 1.2rem;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.75);
+}
+
+/* =========================
+   BOTTOM NOTE CARDS
+========================= */
+.gh-bottom-row {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.gh-note-card {
+  background: rgba(255,255,255,0.45);
+  border: 1.5px solid rgba(255,255,255,0.65);
+  border-radius: 26px;
+  padding: 1.3rem 1.2rem;
+  box-shadow:
+    0 10px 24px rgba(244, 167, 181, 0.08),
+    inset 0 1px 0 rgba(255,255,255,0.85);
+}
+
+.gh-note-card h4 {
+  font-family: 'Syne', sans-serif;
+  color: #4b3838;
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+
+.gh-note-card p {
+  font-family: 'Quicksand', sans-serif;
+  color: #7a6868;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .github-top-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .github-stats-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gh-bottom-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .github-section {
+    padding: 4.5rem 1rem 3.5rem;
+  }
+
+  .github-profile-card,
+  .github-main-card {
+    padding: 1.4rem;
+    border-radius: 28px;
+  }
+
+  .github-stats-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .github-chart {
+    min-width: 720px;
+  }
+
+  .github-main-top h3 {
+    font-size: 1.35rem;
+  }
+
+  .github-profile-card h3 {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .github-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .calendar-wrap {
+    justify-content: flex-start;
+  }
+
+  .gh-profile-top {
+    align-items: flex-start;
+  }
+
+  .gh-main-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .gh-tags {
+    gap: 0.55rem;
+  }
+
+  .gh-tags span {
+    font-size: 0.76rem;
+    padding: 0.55rem 0.9rem;
+  }
+}
+#avg{
+    height: 200px;
+    position: absolute;
+    z-index:100;
+    bottom:-10px;
+    right: -10px;
+}

@@ -1,0 +1,87 @@
+/* =========================
+   SMOOTH INFINITE MARQUEE
+========================= */
+
+.marquee-wrap {
+    background: black;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 5;
+}
+
+.marquee-wrap::before,
+.marquee-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marquee-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0.95), transparent);
+}
+
+.marquee-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0.95), transparent);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 20s linear infinite;
+}
+
+.marquee-track span {
+    -webkit-text-stroke: 1px white;
+    text-shadow: 0 0 10px white;
+  font-family: 'bungee', cursive;
+  font-size: clamp(2rem, 4vw, 2.4rem);
+  font-weight: 700;
+  color: #f999af;
+  white-space: nowrap;
+  padding-right: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+/* smooth infinite motion */
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* optional hover pause */
+.marquee-wrap:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .marquee-wrap {
+    padding: 0.8rem 0;
+    margin-top: 1rem;
+  }
+
+  .marquee-track span {
+    font-size: 0.95rem;
+    padding-right: 2rem;
+  }
+
+  .marquee-wrap::before,
+  .marquee-wrap::after {
+    width: 60px;
+  }
+}

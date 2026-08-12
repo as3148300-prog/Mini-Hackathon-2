@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Bungee&family=Caveat:wght@400..700&family=Climate+Crisis:YEAR@1979&family=Pacifico&family=Quicksand:wght@300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+  margin: 0;
+}
+:root{
+  --text-stroke:rgba(208, 54, 82, 0.5);
+}
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+h1,
+h2 {
+  -webkit-text-stroke: 1px var(--text-stroke);
+  font-family: 'bungee';
+  font-weight: 500;
+  color: #F5AFAF;
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
